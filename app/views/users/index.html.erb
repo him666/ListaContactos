@@ -1,16 +1,7 @@
-<div class="container">
-  <div class="row">
-    <h3>Users</h3>
-    <div class="column">
-      <table class="table">
-        <tbody>
-          <% @users.each do |user| %>
-            <tr>
-              <%= render user %>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+<h1>ListaContactos.org</h1>
+<p>Bienvenido <%= current_user.email %> </p>
+<p> Aqui te permitimos guardar una lista de contactos
+<p>para que siempre puedas adquirir el numero de telefono
+<p>de la persona que quieras contactar</p>
+<%= link_to('Nuevo Contacto', new_contacto_path) %>
+<%= link_to(' Ver Contactos', contactos_path ) %>

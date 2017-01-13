@@ -12,7 +12,7 @@
 <div class="col-sm-6 col-md-5">
   <div class="alert-link">
     <% unless current_user.nil? %>
-        <%= link_to('Inicio', 'users#index') %>
+        <%= link_to('Inicio', users_path) %>
         <%= link_to('Salir', destroy_user_session_path, :method => :delete) %>
     <% end %>
   </div>
